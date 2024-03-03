@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(228, 190, 190);
+}
+#gameboard {
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+
+.square {
+  height: 61px;
+  width: 61px;
+  position: relative;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square svg {
+  height: 40px;
+  width: 40px;
+  margin: 7px;
+  position: relative;
+  z-index: -9;
+}
+
+.path {
+  position: relative;
+  z-index: -10;
+}
+.piece {
+  position: relative;
+  z-index: 9;
+}
+
+.beige {
+  background-color: rgb(110, 110, 98);
+}
+
+.brown {
+  background-color: rgb(169, 43, 43);
+}
+
+.black {
+  fill: rgb(28, 28, 28);
+}
+.white {
+  fill: white;
+}
+#info-display {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#player {
+  font-weight: bold;
+}
+
+p {
+  margin: 10px 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 50px;
+}
+/* ///////////////////// */
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.conquered {
+  padding: 20px;
+  width: 100px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 2px solid #000;
+  background-color: rgb(228, 190, 190);
+  margin-bottom: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.conquered svg {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 5px;
+}
+.centered {
+  text-align: center;
+}

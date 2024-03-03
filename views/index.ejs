@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chess</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <% connectedUsers.forEach(user => { %>
+        <li><%= user %></li>
+        <% }); %>
+      </ul>
+      <div id="player1" class="player">
+        <h2>Player 1</h2>
+        <div id="player1-conquered" class="conquered"></div>
+      </div>
+      <div id="gameboard"></div>
+      <div id="player2" class="player">
+        <h2>Player 2</h2>
+        <div id="player2-conquered" class="conquered"></div>
+      </div>
+    </div>
+    <p class="centered">It is <span id="player"></span> go.</p>
+    <p id="info-display"></p>
+    <script src="pieces.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
